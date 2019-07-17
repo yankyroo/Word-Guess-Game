@@ -40,10 +40,6 @@ var wordNow = puppyNames[pupRand].toUpperCase();
 
 var remLet = wordNow.length;
 
-// var pup = document.createElement("img");
-// pup.src = "assets/images/pearl_16x9.jpg";
-// document.body.appendChild(pup);
-
 function reset() {
 
     guessesLeft = 0;
@@ -144,23 +140,20 @@ var pupImg = function() {
 
 };
 
-// var removeElement = function() {
-
-//     element.onkeypress.reset();
-
-// };
-
 document.addEventListener("keypress", function() {
-
-    wrong();
     
     var letter = event.key.toUpperCase();
 
-    lettersGuessed.push(letter);
+    if (lettersGuessed.indexOf(letter) === -1) {
+
+        lettersGuessed.push(letter);
+        wrong();
+
+    }
 
     for (var j = 0; j < wordNow.length; j++) {
 
-        if (wordNow[j] === letter)  {
+        if (wordNow[j] === letter) {
                 
             blank[j] = letter;
 

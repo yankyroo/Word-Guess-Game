@@ -5,169 +5,29 @@
         <meta name="viewport" content="width=device-width">
         <title>Word Guess Game!</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <audio autoplay>
             <source src="assets/soundz/zapsplat_horror_swell_into_impactful_hit_grinding_metal_whine_002_31738.mp3" type="audio/mpeg">
         </audio>
     </head>
     <body>
-
         <div class="header">HANGMAN PUPS</div>
-        
-        <div id="game"></div>
-
-        <img id="pup">
-
-        <div id="current-word"></div>
-
-        <div id="wins"></div>
-
-        <div id="guesses-left"></div>
-
-        <div id="letters-guessed"></div>
-
+        <div id="game" class="start"></div>
+        <div class="container">
+            <!-- <div class="row"> -->
+                <div class="col-md-6 left">
+                    <img id="pup"></div>
+                </div>
+                <div class="col-md-6 right">
+                    <div id="current-word"></div>
+                    <div id="wins"></div>
+                    <div id="guesses-left"></div>
+                    <div id="letters-guessed"></div>
+                </div>
+            </div>
         <script src="assets/javascript/game.js"></script>
-
-        <!-- <script type="text/javascript">
-
-            // alph = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-
-            puppyNames = ['Spot', 'Fido', 'Buddy', 'Benji', 'Patches', 'Max', 'Lassie', 'Sparky', 'Fluffy', 'Princess', 'Rex', 'Bear', 'Milo', 'Scout', 'Duke', 'Lady', 'Shadow', 'Rufus'];
-
-            var wins = 0, guessesLeft, lettersGuessed, blank;
-
-            var gameAlert = document.getElementById("game");
-
-            var wordNowText = document.getElementById("current-word");
-
-            var winsText = document.getElementById("wins");
-
-            var guessesLeftText = document.getElementById("guesses-left");
-
-            var lettersGuessedText = document.getElementById("letters-guessed");
-
-            var pupRand = Math.floor(Math.random() * puppyNames.length);
-
-            var wordNow = puppyNames[pupRand].toUpperCase();
-
-            var remLet = wordNow.length;
-
-            function reset() {
-
-                guessesLeft = 0;
-
-                lettersGuessed = [];
-
-                blank = [];
-
-                var pupRand = Math.floor(Math.random() * puppyNames.length);
-
-                if (wordNow.length <= 5) {
-
-                    guessesLeft = 10;
-
-                } else {
-
-                    guessesLeft = remLet * 2;
-
-                };
-
-                var underS = function() {
-
-                    for (var i = 0; i < remLet; i++) {
-
-                        blank[i] = ("_");
-                        
-                    }
-                    
-                    return blank;
-
-                };
-
-                underS();
-
-            };
-
-            reset();
-
-            var begin = function() {
-
-                gameAlert.textContent = "Press any letter key to get started.";
-                
-                wordNowText.textContent = "CURRENT WORD: " + blank.join(' ');
-
-                winsText.textContent = "WINS: " + wins;
-
-                guessesLeftText.textContent = "GUESSES REMAINING: " + guessesLeft;
-
-                lettersGuessedText.textContent = "LETTERS GUESSED: " + lettersGuessed.join(', ');
-
-            };
-
-            begin();
-
-            document.addEventListener("keypress", function() {
-
-                if (won) {
-
-                    won = false;
-
-                    reset();
-
-                    return;
-                };
-                
-                var letter = event.key.toUpperCase();
-                lettersGuessed.push(letter);
-
-                for (var j = 0; j < wordNow.length; j++) {
-
-                    if (wordNow[j] === letter)  {
-                            
-                        blank[j] = letter;
-
-                    }
-
-                    };
-
-
-                if ((guessesLeft >= 1) && (wordNow.indexOf(letter) === -1)) {
-
-                    guessesLeft--;
-
-                } else {
-
-                    guessesLeft;
-
-                }
-
-                begin();
-
-                var won = true;
-
-                for (var i = 0; i < blank.length; i++) {
-
-                    if (blank[i] === '_') {
-
-                        won = false;
-
-                        break;
-
-                    }
-
-                }
-
-                if (won) {
-
-                    wins++;
-
-                    gameAlert.textContent = "GOOD JOB! Press any letter key to continue.";
-
-                    reset();
-
-                }
-                    
-            });
-
-        </script> -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -2,8 +2,7 @@
     background-color: black;
     color: ghostwhite;
     font-family: 'Blackwood Castle';
-    font-size: 35px;
-    text-align: center;
+    font-size: 25px;
     z-index: 1;
 }
 
@@ -12,10 +11,54 @@
     font-size: 200px;
     text-align: center;
     top: 0;
+    text-align: center;
     z-index: 3;
 }
 
+.start {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    top: 20px;
+    float: left;
+    text-align: left;
+    right: 30px;
+}
+
 #pup {
-    max-height: 200px;
+    max-height: 180px;
     z-index: 2;
+}
+
+@media screen and (max-width: 640px) {
+
+    .header {
+        
+        font-size: 85px;
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+
+    * {
+
+        font-size: 20px;
+
+    }
+    
+    .header {
+
+        font-size: 55px;
+        width: 100%;
+
+    }
 }
