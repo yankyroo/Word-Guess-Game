@@ -176,7 +176,7 @@ document.addEventListener("keypress", function() {
     for (var i = 0; i < blank.length; i++) {
 
         if (blank[i] === '_') {
-
+            
             won = false;
 
             break;
@@ -189,11 +189,11 @@ document.addEventListener("keypress", function() {
 
         won = false;
 
+        wins++;
+
         pupImg();
         
         yay();
-
-        wins++;
 
         gameAlert.textContent = "EVIL JOB! Press any letter key to continue.";
 
