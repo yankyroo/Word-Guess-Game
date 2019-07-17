@@ -37,19 +37,20 @@
 }
 
 @font-face {
-
-    font-family: 'Gypsy Curse';
-
-    src: url("assets/fontz/Gypsy Curse.ttf");
+    font-family: 'blackwood_castleregular';
+    src: url('blackwood_castle.woff2') format('woff2'),
+         url('blackwood_castle.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 @font-face {
-
-    font-family: 'Blackwood Castle';
-
-    src: url("assets/fontz/Blackwood Castle.ttf");
-
+    font-family: 'gypsy_curseregular';
+    src: url('gypsy_curse.woff2') format('woff2'),
+         url('gypsy_curse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media screen and (max-width: 640px) {
