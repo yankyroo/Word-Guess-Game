@@ -1,0 +1,21 @@
+* {
+    background-color: black;
+    color: ghostwhite;
+    font-family: 'Blackwood Castle';
+    font-size: 35px;
+    text-align: center;
+    z-index: 1;
+}
+
+.header {
+    font-family: 'Gypsy Curse';
+    font-size: 200px;
+    text-align: center;
+    top: 0;
+    z-index: 3;
+}
+
+#pup {
+    max-height: 200px;
+    z-index: 2;
+}
