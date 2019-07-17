@@ -38,9 +38,17 @@
 
 @font-face {
 
+    font-family: 'Gypsy Curse';
+
+    src: url("assets/fontz/Gypsy Curse.ttf");
+
+}
+
+@font-face {
+
     font-family: 'Blackwood Castle';
 
-    src: url("assets/.vscode/settings.json");
+    src: url("assets/fontz/Blackwood Castle.ttf");
 
 }
 
