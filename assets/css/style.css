@@ -1,17 +1,16 @@
 * {
     background-color: black;
     color: ghostwhite;
-    font-family: 'Blackwood Castle';
+    font-family: 'Eagle Lake', cursive;
     font-size: 25px;
     z-index: 1;
 }
 
 .header {
-    font-family: 'Gypsy Curse';
-    font-size: 200px;
-    text-align: center;
-    top: 0;
-    text-align: center;
+    background: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
     z-index: 3;
 }
 
@@ -22,12 +21,14 @@
 
 .left {
     float: left;
+    clear: left;
 }
 
 .right {
     top: 20px;
     float: left;
     text-align: left;
+    left: 10px;
     right: 30px;
 }
 
