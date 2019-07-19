@@ -1,7 +1,15 @@
+@font-face {
+    font-family: 'Blackwood Castle';
+    src: url('../fontz/blackwood_castle.ttf') format('truetype');
+         /* url(blackwood_castle.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     background-color: black;
     color: ghostwhite;
-    font-family: 'Eagle Lake', cursive;
+    font-family: 'Blackwood Castle';
     font-size: 25px;
     z-index: 1;
 }
@@ -39,8 +47,8 @@
 
 @font-face {
     font-family: 'Blackwood Castle';
-    src: url('blackwood_castle.ttf') format('truetype'),
-         url('blackwood_castle.woff') format('woff');
+    src: url('../fontz/blackwood_castle.ttf') format('truetype');
+         /* url(blackwood_castle.woff') format('woff'); */
     font-weight: normal;
     font-style: normal;
 }
