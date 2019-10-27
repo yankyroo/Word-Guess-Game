@@ -1,3 +1,3 @@
 # word-guess
 Homework-3
-https://yankyroo.github.io/Word-Guess-Game
+https://ryankooy.github.io/Word-Guess-Game
